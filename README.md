@@ -9,6 +9,12 @@ CNN做句子分类的论文可以参看: [Convolutional Neural Networks for Sent
 还可以去读dennybritz大牛的博客：[Implementing a CNN for Text Classification in TensorFlow](http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/)
 
 以及字符级CNN的论文：[Character-level Convolutional Networks for Text Classification](https://arxiv.org/abs/1509.01626)
+		
+## 数据集
+
+百度云盘：https://pan.baidu.com/s/1S_k5K4CWWtPs8A7pgQ4CsQ 
+提取码：2oek
+
 
 ## 环境
 
@@ -68,7 +74,7 @@ self.embedding = tf.get_variable("embeddings", shape=[self.config.vocab_size,
 self.embedding_inputs= tf.nn.embedding_lookup(self.embedding, self.input_x)
 
 
-word2vec 微调（static）
+word2vec  （static）
 self.embedding = tf.get_variable("embeddings", shape=[self.config.vocab_size,   
          self.config.embedding_size], 
          initializer=tf.constant_initializer(self.config.pre_trianing),trainable=False)
